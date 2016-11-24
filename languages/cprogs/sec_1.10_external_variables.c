@@ -27,7 +27,7 @@ if (max > 0) /* there was a line */
         int c, i;
         extern char line[];
         for (i = 0; i < MAXLINE - 1
-            && (c=getchar)) != EOF && c != '\n'; ++i)
+            && (c=getchar()) != EOF && c != '\n'; ++i)
 line[i] = c;
 if (c == '\n') {
     line[i] = c;
